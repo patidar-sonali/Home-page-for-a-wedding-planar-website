@@ -1,0 +1,62 @@
+
+<html>
+  <head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+  </head>
+  <body>
+    <form>
+      <div class="input-group">
+        <label>Designation</label>
+        <select name="Designation" id="designation" required>
+          <option value="" selected="selected">Select Designation</option>
+          <option value="Bride">Bride</option>
+          <option value="Groom">Groom</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="fname">Firstname</label>
+        <input id="fname" name="fname" placeholder="Enter firstname" required/>
+      </div>
+      <div class="input-group">
+        <label for="lname">Lastname</label>
+        <input id="lname" name="lname" placeholder="Enter lastname" required/>
+      </div>
+      <div class="input-group">
+        <label for="Phone Number">Phone Number</label>
+        <input
+          id="Phone Number"
+          type="Phone Number"
+          name="Phone Number"
+          placeholder="Phone Number"
+          required="required"
+        />
+      </div>
+      <div class="input-group">
+        <label for="Date">Date of Wedding</label>
+        <input id="Date" type="Date" name="Date" placeholder="Date" />
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" />
+      </div>
+      <div class="input-group">
+        <label for="Location">Location</label>
+        <input id="Location" type="Location" name="Location" placeholder="Location of wedding" />
+      </div>
+      <div class="input-group">
+        <label for="message">Any message?</label>
+        <textarea id="message" name="message" placeholder="Optional"></textarea>
+      </div>
+      <div class="submit-group">
+        <button type="submit" onclick="redirect(); return false;">Submit</button>
+        <script>
+          function redirect() {
+            location.href = "/home_page.html";
+          }
+        </script>
+      </div>
+    </form>
+  </body>
+</html>
